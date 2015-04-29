@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Accounts>
+    <Account
+        Name="HSBC"
+        Balance="200.45"
+        Overview="true"
+        CreditAcc="false"
+        CreditLimit="0.00"
+        >
+        </Account>
+    <Account
+        Name="HSBC CC"
+        Balance="1,000.10"
+        Overview="false"
+        CreditAcc="true"
+        CreditLimit="3,000.00"
+        >
+        </Account>
+    <Account
+        Name="Lloyds"
+        Balance="365.93"
+        Overview="false"
+        CreditAcc="false"
+        CreditLimit="0.00"
+        >
+        </Account>
+</Accounts>

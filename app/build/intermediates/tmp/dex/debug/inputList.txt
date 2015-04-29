@@ -1,0 +1,2 @@
+/media/AndroidSD/16gbSD/Android/Android Projects/PIGuBank/app/build/intermediates/classes/debug
+/media/AndroidSD/16gbSD/Android/Android Projects/PIGuBank/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-4be380e003c34af26ba532046dba0fb6cb67e493.jar

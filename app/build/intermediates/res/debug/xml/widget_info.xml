@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="82dp"
+    android:maxWidth="82dp"
+    android:minHeight="19dp"
+    android:maxHeight="19dp"
+    android:updatePeriodMillis="2000"
+    android:initialLayout="@layout/widget"
+    
+    >
+</appwidget-provider>    <!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/xml/widget_info.xml -->

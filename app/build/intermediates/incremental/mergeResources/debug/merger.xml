@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res"><file name="gradient" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\drawable\gradient.xml" qualifiers="" type="drawable"/><file name="ic_launcher" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\drawable-hdpi\ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\drawable-mdpi\ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\drawable-xhdpi\ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="about" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\about.xml" qualifiers="" type="layout"/><file name="accounts" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\accounts.xml" qualifiers="" type="layout"/><file name="accounts_buttons" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\accounts_buttons.xml" qualifiers="" type="layout"/><file name="acc_dialog" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\acc_dialog.xml" qualifiers="" type="layout"/><file name="bgt_dialog" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\bgt_dialog.xml" qualifiers="" type="layout"/><file name="budgets" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\budgets.xml" qualifiers="" type="layout"/><file name="budgets_buttons" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\budgets_buttons.xml" qualifiers="" type="layout"/><file name="calc_dialog" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\calc_dialog.xml" qualifiers="" type="layout"/><file name="fragment_account" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\fragment_account.xml" qualifiers="" type="layout"/><file name="fragment_budget" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\fragment_budget.xml" qualifiers="" type="layout"/><file name="fragment_budget_view" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\fragment_budget_view.xml" qualifiers="" type="layout"/><file name="fragment_budget_view_item" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\fragment_budget_view_item.xml" qualifiers="" type="layout"/><file name="home" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\home.xml" qualifiers="" type="layout"/><file name="menu_drawer" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\menu_drawer.xml" qualifiers="" type="layout"/><file name="widget" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\layout\widget.xml" qualifiers="" type="layout"/><file name="menu" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\menu\menu.xml" qualifiers="" type="menu"/><file name="about" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\raw\about.txt" qualifiers="" type="raw"/><file path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\values\colors.xml" qualifiers=""><color name="fillBoxBehindText">#8A0829</color><color name="textOverBackgrnd">#01A9DB</color><color name="spacerColor">#01A9DB</color><color name="buttonTextColor">#01A9DB</color><color name="widgetTextColor">#F368C2</color><color name="textOverGradient">#F368C2</color><color name="pink">#DF013A</color><color name="backgrnd">#1C1C1C</color><color name="centreGradient">#5C5C5C</color></file><file path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\values\dimens.xml" qualifiers=""><dimen name="spacerHeight">1sp</dimen><dimen name="thickMargin">20sp</dimen><dimen name="widgetTextSize">30sp</dimen><dimen name="margin">5sp</dimen><dimen name="largeMargin">10sp</dimen><dimen name="textSize">18sp</dimen><dimen name="titleTextSize">28sp</dimen><dimen name="accountHeight">2sp</dimen><dimen name="tableTextSize">8sp</dimen></file><file path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\values\drawer_options.xml" qualifiers=""><string-array name="drawer_options">
+        <item name="budgets_drawer_item">Edit Budgets</item>
+        <item name="accounts_drawer_item">Edit Accounts</item>
+        <item name="record_drawer_item">Record</item>
+        <item name="about_drawer_item">About</item>
+    </string-array></file><file path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\values\freqoptions.xml" qualifiers=""><string-array name="freqMonthDate">
+	    <item name="not_selected">Select an option</item>
+    	<item name="freq_1">1</item>
+    	<item name="freq_2">2</item>
+    	<item name="freq_3">3</item>
+    	<item name="freq_4">4</item>
+    	<item name="freq_5">5</item>
+    	<item name="freq_6">6</item>
+    	<item name="freq_7">7</item>
+    	<item name="freq_8">8</item>
+    	<item name="freq_9">9</item>
+    	<item name="freq_10">10</item>
+    	<item name="freq_11">11</item>
+    	<item name="freq_12">12</item>
+    	<item name="freq_13">13</item>
+    	<item name="freq_14">14</item>
+    	<item name="freq_15">15</item>
+    	<item name="freq_16">16</item>
+    	<item name="freq_17">17</item>
+    	<item name="freq_18">18</item>
+    	<item name="freq_19">19</item>
+    	<item name="freq_20">20</item>
+    	<item name="freq_21">21</item>
+    	<item name="freq_22">22</item>
+    	<item name="freq_23">23</item>
+    	<item name="freq_24">24</item>
+    	<item name="freq_25">25</item>
+    	<item name="freq_26">26</item>
+    	<item name="freq_27">27</item>
+    	<item name="freq_28">28</item>
+    	<item name="freq_29">29 (or Last)</item>
+    	<item name="freq_30">30 (or Last)</item>
+    	<item name="freq_31">31 (or Last)</item>
+	</string-array><string-array name="freqMonthDateBeforeAfter">
+		<item name="not_selected">even if on a weekend.</item>
+		<item name="freq_weekdaybefore">or on weekday before.</item>
+		<item name="freq_weekdayafter">or on weekday after.</item>
+	</string-array><string-array name="freqMonthWeekDay">
+	    <item name="not_selected">Select a option</item>
+    	<item name="freq_first">First</item>
+    	<item name="freq_second">Second</item>
+    	<item name="freq_third">Third</item>
+    	<item name="freq_forth">Forth (or Last)</item>
+    	<item name="freq_last">Last</item>
+	</string-array><string-array name="freqWeekDay">
+	    <item name="not_selected">Select an option</item>
+        <item name="freq_sunday">Sunday</item>
+    	<item name="freq_monday">Monday</item>
+    	<item name="freq_tuesday">Tuesday</item>
+    	<item name="freq_wednesday">Wednesday</item>
+    	<item name="freq_thursday">Thursday</item>
+    	<item name="freq_friday">Friday</item>
+    	<item name="freq_saturday">Saturday</item>
+	</string-array><string-array name="freqType">
+	    <item name="not_selected">Select a option</item>
+    	<item name="freq_week">Week(s)</item>
+    	<item name="freq_month">Month(s)</item>
+    	<item name="freq_year">Year(s)</item>
+	</string-array><string-array name="freqYearMonth">
+	    <item name="not_selected">Select an option</item>
+    	<item name="freq_january">January</item>
+    	<item name="freq_february">February</item>
+    	<item name="freq_march">March</item>
+    	<item name="freq_april">April</item>
+    	<item name="freq_may">May</item>
+    	<item name="freq_june">June</item>
+    	<item name="freq_july">July</item>
+    	<item name="freq_august">August</item>
+    	<item name="freq_september">September</item>
+    	<item name="freq_october">October</item>
+    	<item name="freq_november">November</item>
+    	<item name="freq_december">December</item>
+	</string-array></file><file path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\values\strings.xml" qualifiers=""><string name="dialog_bgt_freq_buttons">by: </string><string name="accounts_menu_item">Accounts</string><string name="dialog_wgt_button_open">Open App</string><string name="dialog_bgt_freq_button_date">Date</string><string name="budgets_activity_title_string">My Budgets</string><string name="dialog_acc_edit_title">Edit Existing Account Details</string><string name="table_header_time">Time</string><string name="accounts_activity_label_in_overview">Main Account In Overview</string><string name="dialog_bgt_freq_off">of</string><string name="app_currency_format">#,###,##0.00</string><string name="home_budgets_title_string">My Budgets</string><string name="button_add_account">Add New Account</string><string name="dialog_bgt_delete">Delete</string><string name="dialog_acc_delete">Delete</string><string name="button_add_budget">Add New Budget</string><string name="overview_title_string">Main Account Balance: </string><string name="tableHeader_acc">Account</string><string name="dialog_wgt_button_add">Add</string><string name="dialog_acc_add_name_tv">Name of Account</string><string name="dialog_bgt_freq_on">on</string><string name="table_header_account">Account</string><string name="zero_bal">0.00</string><string name="dialog_acc_add_title">Enter New Account Details</string><string name="dialog_bgt_freq_every">Every</string><string name="dialog_acc_save">Save</string><string name="table_header_activity">Activity</string><string name="dialog_bgt_name">Name of Budget</string><string name="toast_no_accounts">Please create an account</string><string name="dialog_bgt_freq">Frequency budget resets by:</string><string name="dialog_bgt_save">Save</string><string name="dialog_bgt_cancel">Cancel</string><string name="tableHeader_time">Time</string><string name="dialog_bgt_limit">Budget limit</string><string name="dialog_acc_add_avail_spend_tv">Current balance</string><string name="accounts_activity_title_string">My Accounts</string><string name="accounts_activity_edit_accounts_title_string">Edit My Existing Accounts</string><string name="dialog_wgt_button_subtract">Subtract</string><string name="button_edit">Edit</string><string name="app_name_string">My PIGu Bank</string><string name="about_menu_item">About</string><string name="button_config_account">Configure Account</string><string name="dialog_bgt_freq_date_of_month">on selected date of the month: </string><string name="dialog_acc_add_credit_limit_tv">Credit Limit</string><string name="dialog_bgt_edit_title">Edit Existing Budget Details</string><string name="dialog_bgt_amount_spent">Budget spent currently: </string><string name="tableHeader_date">Date</string><string name="dialog_bgt_freq_on_year_date">on selected date: </string><string name="save_calc">Save</string><string name="budgets_menu_item">Budgets</string><string name="widgetImageContent_Description">Widget Quick Balance Background Image</string><string name="dialog_acc_add_check_credit">Credit Account?</string><string name="dialog_wgt_button_cancel">Cancel</string><string name="dialog_bgt_add_title">Enter New Budget Details</string><string name="dialog_wgt_title">Enter Amount to Add or Subtract</string><string name="tableHeader_act">Activity</string><string name="dialog_acc_labal_main_account">Main Account?</string><string name="history_menu_item">History</string><string name="dialog_acc_cancel">Cancel</string><string name="button_Add_Subtract">Add or Subtract Monies</string><string name="table_header_date">Date</string><string name="about_title_string">About This App</string><string name="dialog_bgt_freq_button_day">Day</string></file><file path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\values\styles.xml" qualifiers=""><style name="ActivityTheme" parent="AppTheme">
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:background">@color/backgrnd</item>
+        
+    </style><style name="AppTheme" parent="@android:style/Theme.Holo">
+    </style><style name="TitleFontStyle" parent="ActivityTheme">
+        <item name="android:textSize">@dimen/titleTextSize</item>
+        <item name="android:textColor">@color/textOverBackgrnd</item>
+        <item name="android:textStyle">bold</item>
+    </style><style name="SmallTitleFontStyle" parent="ActivityTheme">
+        <item name="android:textColor">@color/textOverBackgrnd</item>
+        <item name="android:textStyle">bold</item>
+    </style><style name="CustomAlertDialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:textColor">@color/textOverBackgrnd</item>
+        <item name="android:textSize">@dimen/textSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:typeface">serif</item>
+    </style><style name="AppBaseTheme" parent="android:Theme.Holo">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style><style name="GradientFontStyle" parent="AppTheme">
+        <item name="android:textColor">@color/textOverGradient</item>
+        <item name="android:textSize">@dimen/titleTextSize</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:textStyle">bold</item>
+    </style></file><file path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\values-v11\styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style></file><file path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style></file><file name="mockactions" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\xml\mockactions.xml" qualifiers="" type="xml"/><file name="recentactivitylog" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\xml\recentactivitylog.xml" qualifiers="" type="xml"/><file name="useraccounts" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\xml\useraccounts.xml" qualifiers="" type="xml"/><file name="userbudgets" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\xml\userbudgets.xml" qualifiers="" type="xml"/><file name="widget_info" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\res\xml\widget_info.xml" qualifiers="" type="xml"/></source><source path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\build\generated\res\rs\debug"/><source path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\build\generated\res\generated\debug"/></dataSet><dataSet config="debug"><source path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\debug\res"/></dataSet><mergedItems/></merger>

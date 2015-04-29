@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <gradient
+        android:startColor="@color/backgrnd"
+        android:centerColor="@color/centreGradient"
+        android:endColor="@color/backgrnd"
+        android:angle="90"
+        />
+</shape><!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/drawable/gradient.xml -->

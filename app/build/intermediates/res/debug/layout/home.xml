@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android1="http://schemas.android.com/apk/res/android"
+    style="@style/ActivityTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/HomeLLtop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:id="@+id/HomeLLbuttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/HomeButtonAddSubtract"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/largeMargin"
+                android:onClick="onAddSubtractButtonClick"
+                android:text="@string/button_Add_Subtract"
+                tools:ignore="ButtonStyle" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/spacerHeight"
+            android:background="@color/spacerColor"
+            tools:ignore="ContentDescription" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vpPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v4.view.PagerTabStrip
+                android:id="@+id/pager_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:paddingBottom="@dimen/margin"
+                android:paddingTop="@dimen/margin" />
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/layout/home.xml -->

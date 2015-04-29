@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    
+    android:id="@+id/AboutRL01"
+    style="@style/ActivityTheme"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent" >
+    
+
+	        <TextView
+	            android:id="@+id/AboutTV01"
+	            style="@style/TitleFontStyle"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:gravity="fill_vertical|center"
+	            android:text="@string/about_title_string" 
+	            />
+	    
+	    	<ImageView
+	    	    android:id="@+id/AboutIV01"
+		        android:layout_width="match_parent"
+		        android:layout_height="@dimen/spacerHeight"
+		        android:layout_below="@+id/AboutTV01"
+		        android:background="@color/spacerColor"
+		        tools:ignore="ContentDescription" 
+		        />
+
+		<TextView 
+		    android:id="@+id/AboutTV02"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:layout_below="@+id/AboutIV01"
+		    android:layout_gravity="fill_horizontal|center"
+		    android:gravity="center"
+		    android:isScrollContainer="true"
+		    android:scrollbars="vertical"
+		    android:textColor="@color/textOverBackgrnd"
+		    android:layout_margin="@dimen/margin"
+		    android:bufferType="spannable"
+		    />
+    	
+    </RelativeLayout><!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/layout/about.xml -->

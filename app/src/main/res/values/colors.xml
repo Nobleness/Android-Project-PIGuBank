@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="backgrnd">#1C1C1C</color>
+    <color name="textOverBackgrnd">#01A9DB</color>
+    <color name="textOverGradient">#F368C2</color>
+    <color name="widgetTextColor">#F368C2</color>
+    <color name="centreGradient">#5C5C5C</color>
+    <color name="spacerColor">#01A9DB</color>
+    <color name="fillBoxBehindText">#8A0829</color>
+    <color name="buttonTextColor">#01A9DB</color>
+    <color name="pink">#DF013A</color>
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:focusable="false"
+	android:focusableInTouchMode="false"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	    android:paddingLeft="@dimen/thickMargin"
+		android:paddingRight="@dimen/thickMargin"
+		android:orientation="horizontal"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+        >
+	    <Button
+	        style="style/android:attr/ButtonStyle"
+	        android:id="@+id/BudgetBnEdit"
+	        android:text="@string/button_edit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:focusable="false"
+	        android:focusableInTouchMode="false"
+	        />
+    </LinearLayout>
+</LinearLayout>

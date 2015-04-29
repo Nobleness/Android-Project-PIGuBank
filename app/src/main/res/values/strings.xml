@@ -1,0 +1,75 @@
+<resources>
+	<string name="app_currency_format">#,###,##0.00</string>
+	
+    <string name="app_name_string">My PIGu Bank</string>
+    <string name="overview_title_string">Main Account Balance: </string>
+    <string name="home_budgets_title_string">My Budgets</string>
+    <string name="about_title_string">About This App</string>
+    <string name="accounts_activity_title_string">My Accounts</string>
+    <string name="accounts_activity_edit_accounts_title_string">Edit My Existing Accounts</string>
+    <string name="budgets_activity_title_string">My Budgets</string>
+    <string name="accounts_activity_label_in_overview">Main Account In Overview</string>
+
+    <string name="toast_no_accounts">Please create an account</string>
+
+    <string name="button_config_account">Configure Account</string>
+    <string name="button_Add_Subtract">Add or Subtract Monies</string>
+    <string name="button_add_account">Add New Account</string>
+    <string name="button_edit">Edit</string>
+    <string name="button_add_budget">Add New Budget</string>
+    
+    <string name="table_header_account">Account</string>
+    <string name="table_header_activity">Activity</string>
+    <string name="table_header_time">Time</string>
+    <string name="table_header_date">Date</string>
+    <string name="tableHeader_acc">Account</string>
+    <string name="tableHeader_act">Activity</string>
+    <string name="tableHeader_date">Date</string>
+    <string name="tableHeader_time">Time</string>
+    
+    <string name="zero_bal">0.00</string>
+    <string name="save_calc">Save</string>
+    
+    <string name="dialog_wgt_button_cancel">Cancel</string>
+    <string name="dialog_wgt_button_add">Add</string>
+    <string name="dialog_wgt_button_subtract">Subtract</string>
+    <string name="dialog_wgt_button_open">Open App</string>
+    <string name="dialog_wgt_title">Enter Amount to Add or Subtract</string>
+    
+    <string name="dialog_acc_add_title">Enter New Account Details</string>
+    <string name="dialog_acc_edit_title">Edit Existing Account Details</string>
+    <string name="dialog_acc_add_name_tv">Name of Account</string>
+    <string name="dialog_acc_labal_main_account">Main Account?</string>
+    <string name="dialog_acc_add_avail_spend_tv">Current balance</string>
+    <string name="dialog_acc_add_check_credit">Credit Account?</string>
+    <string name="dialog_acc_add_credit_limit_tv">Credit Limit</string>
+    <string name="dialog_acc_save">Save</string>
+    <string name="dialog_acc_cancel">Cancel</string>
+    <string name="dialog_acc_delete">Delete</string>
+    
+    <string name="dialog_bgt_add_title">Enter New Budget Details</string>
+    <string name="dialog_bgt_edit_title">Edit Existing Budget Details</string>
+    <string name="dialog_bgt_name">Name of Budget</string>
+    <string name="dialog_bgt_limit">Budget limit</string>
+    <string name="dialog_bgt_amount_spent">Budget spent currently: </string>
+    <string name="dialog_bgt_freq">Frequency budget resets by:</string>
+    <string name="dialog_bgt_freq_every">Every</string>
+    //<string name="dialog_bgt_freq_buttons">by: </string>
+    <string name="dialog_bgt_freq_on">on</string>
+    <string name="dialog_bgt_freq_off">of</string>
+    <string name="dialog_bgt_freq_button_day">Day</string>
+    <string name="dialog_bgt_freq_button_date">Date</string>
+    <string name="dialog_bgt_freq_date_of_month">on selected date of the month: </string>
+    <string name="dialog_bgt_freq_on_year_date">on selected date: </string>
+    <string name="dialog_bgt_save">Save</string>
+    <string name="dialog_bgt_cancel">Cancel</string>
+    <string name="dialog_bgt_delete">Delete</string>
+    
+    <string name="budgets_menu_item">Budgets</string>
+    <string name="accounts_menu_item">Accounts</string>
+    <string name="history_menu_item">History</string>
+    <string name="about_menu_item">About</string>
+
+    <string name="widgetImageContent_Description">Widget Quick Balance Background Image</string>
+    
+</resources>

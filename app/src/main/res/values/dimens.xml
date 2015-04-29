@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">28sp</dimen>
+    <dimen name="tableTextSize">8sp</dimen>
+    <dimen name="textSize">18sp</dimen>
+    <dimen name="spacerHeight">1sp</dimen>
+    <dimen name="margin">5sp</dimen>
+    <dimen name="largeMargin">10sp</dimen>
+    <dimen name="thickMargin">20sp</dimen>
+    <dimen name="accountHeight">2sp</dimen>
+    <dimen name="widgetTextSize">30sp</dimen>
+</resources>

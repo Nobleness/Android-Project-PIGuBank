@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="drawer_options">
+        <item name="budgets_drawer_item">Edit Budgets</item>
+        <item name="accounts_drawer_item">Edit Accounts</item>
+        <item name="record_drawer_item">Record</item>
+        <item name="about_drawer_item">About</item>
+    </string-array>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:id="@+id/widget_view"
+    style="@style/ActivityTheme"
+    >
+    
+   
+    	<LinearLayout
+	        android:id="@+id/widgetLLbalance"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:orientation="vertical" 
+	        >
+
+	        <LinearLayout
+	            android:id="@+id/widgetLLbalanceAmount"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_margin="@dimen/margin"
+	            android:gravity="center"
+	            android:orientation="horizontal" 
+	            >
+
+	            <TextView
+	                android:id="@+id/widgetTVsymbol"
+	                style="@style/TitleFontStyle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="@dimen/margin"
+	                />
+
+	            <TextView
+	                android:id="@+id/widgetTVbalance"
+	                style="@style/TitleFontStyle"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginRight="@dimen/margin"
+	                android:maxLines="1"
+	                />
+	            
+	        </LinearLayout>
+	    </LinearLayout>
+
+    </RelativeLayout><!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/layout/widget.xml -->

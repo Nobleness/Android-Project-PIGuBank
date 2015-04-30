@@ -90,10 +90,10 @@ public class PIGuActivity extends FragmentActivity {
             APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_WEEK_DAY =
             "EditBgtFreqWeekDay"; // int spinner
     public static final String
-            APP_PREFERENCES_BIDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BUTTON_BOOLEAN =
+            APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BUTTON_BOOLEAN =
             "EditBgtFreqMonthDateBole"; // date button boolean
     public static final String
-            APP_PREFERENCES_BIDGET_FOR_EDIT_BGT_FREQ_MONTH_DAY_BUTTON_BOOLEAN =
+            APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DAY_BUTTON_BOOLEAN =
             "EditBgtFreqMonthDayBole"; // day button boolean
 	public static final String
             APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE =

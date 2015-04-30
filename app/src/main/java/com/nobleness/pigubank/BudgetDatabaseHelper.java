@@ -11,7 +11,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class BudgetDatabaseHelper extends SQLiteOpenHelper {
 	
-	static final int DATABASE_VERSION = 1;
+	static final int DATABASE_VERSION = 2;
 	static final String DATABASE_NAME = "BudgetReader.db";
 	
 	static final String TABLE_NAME_BUDGETS = "budgets";
@@ -23,6 +23,8 @@ public class BudgetDatabaseHelper extends SQLiteOpenHelper {
 	static final String COLUMN_NAME_BUDGET_FREQ = "budgetfreq";
 	static final String COLUMN_NAME_BUDGET_FREQTYPE = "budgetfreqtype";
 	static final String COLUMN_NAME_BUDGET_FREQWEEKDAY = "budgetfreqweekday";
+    static final String COLUMN_NAME_BUDGET_FREQMONTHBUTTONDATE = "budgetfreqmonthbuttondate";
+    static final String COLUMN_NAME_BUDGET_FREQMONTHBUTTONDAY = "budgetfreqmonthbuttonday";
 	static final String COLUMN_NAME_BUDGET_FREQMONTHDATE = "budgetfreqmonthdate";
 	static final String COLUMN_NAME_BUDGET_FREQMONTHDATEBEFOREAFTER = "budgetfreqmonthdatebeforeafter";
 	static final String COLUMN_NAME_BUDGET_FREQMONTHWEEK = "budgetfreqmonthweek";
@@ -41,6 +43,8 @@ public class BudgetDatabaseHelper extends SQLiteOpenHelper {
 			+ COLUMN_NAME_BUDGET_FREQ + " TEXT,"
 			+ COLUMN_NAME_BUDGET_FREQTYPE + " TEXT,"
 			+ COLUMN_NAME_BUDGET_FREQWEEKDAY + " TEXT,"
+            + COLUMN_NAME_BUDGET_FREQMONTHBUTTONDATE + " TEXT,"
+            + COLUMN_NAME_BUDGET_FREQMONTHBUTTONDAY + " TEXT,"
 			+ COLUMN_NAME_BUDGET_FREQMONTHDATE + " TEXT,"
 			+ COLUMN_NAME_BUDGET_FREQMONTHDATEBEFOREAFTER + " TEXT,"
 			+ COLUMN_NAME_BUDGET_FREQMONTHWEEK + " TEXT,"
@@ -77,6 +81,8 @@ public class BudgetDatabaseHelper extends SQLiteOpenHelper {
 		values.put(COLUMN_NAME_BUDGET_FREQ, budget.getBudgetFreq());
 		values.put(COLUMN_NAME_BUDGET_FREQTYPE, budget.getBudgetFreqType());
 		values.put(COLUMN_NAME_BUDGET_FREQWEEKDAY, budget.getBudgetFreqWeekDay());
+        values.put(COLUMN_NAME_BUDGET_FREQMONTHBUTTONDATE, budget.getBudgetFreqMonthDateButtonBole());
+        values.put(COLUMN_NAME_BUDGET_FREQMONTHBUTTONDAY, budget.getBudgetFreqMonthDayButtonBole());
 		values.put(COLUMN_NAME_BUDGET_FREQMONTHDATE, budget.getBudgetFreqMonthDate());
 		values.put(COLUMN_NAME_BUDGET_FREQMONTHDATEBEFOREAFTER, budget.getBudgetFreqMonthDateBeforeAfter());
 		values.put(COLUMN_NAME_BUDGET_FREQMONTHWEEK, budget.getBudgetFreqMonthWeek());
@@ -101,6 +107,8 @@ public class BudgetDatabaseHelper extends SQLiteOpenHelper {
 						COLUMN_NAME_BUDGET_FREQ,
 						COLUMN_NAME_BUDGET_FREQTYPE,
 						COLUMN_NAME_BUDGET_FREQWEEKDAY,
+                        COLUMN_NAME_BUDGET_FREQMONTHBUTTONDATE,
+                        COLUMN_NAME_BUDGET_FREQMONTHBUTTONDAY,
 						COLUMN_NAME_BUDGET_FREQMONTHDATE,
 						COLUMN_NAME_BUDGET_FREQMONTHDATEBEFOREAFTER,
 						COLUMN_NAME_BUDGET_FREQMONTHWEEK,
@@ -125,7 +133,9 @@ public class BudgetDatabaseHelper extends SQLiteOpenHelper {
 				cursor.getString(9),
 				cursor.getString(10),
 				cursor.getString(11),
-				cursor.getString(12));
+				cursor.getString(12),
+                cursor.getString(13),
+                cursor.getString(14));
 		return budget;					
 	}
 	
@@ -149,12 +159,14 @@ public class BudgetDatabaseHelper extends SQLiteOpenHelper {
 				budget.setBudgetFreq(cursor.getString(4));
 				budget.setBudgetFreqType(cursor.getString(5));
 				budget.setBudgetFreqWeekDay(cursor.getString(6));
-				budget.setBudgetFreqMonthDate(cursor.getString(7));
-				budget.setBudgetFreqMonthDateBeforeAfter(cursor.getString(8));
-				budget.setBudgetFreqMonthWeek(cursor.getString(9));
-				budget.setBudgetFreqMonthWeekDay(cursor.getString(10));
-				budget.setBudgetFreqYearMonthDate(cursor.getString(11));
-				budget.setBudgetFreqYearMonth(cursor.getString(12));
+				budget.setBudgetFreqMonthDateButtonBole(cursor.getString(7));
+                budget.setBudgetFreqMonthDayButtonBole(cursor.getString(8));
+                budget.setBudgetFreqMonthDate(cursor.getString(9));
+				budget.setBudgetFreqMonthDateBeforeAfter(cursor.getString(10));
+				budget.setBudgetFreqMonthWeek(cursor.getString(11));
+				budget.setBudgetFreqMonthWeekDay(cursor.getString(12));
+				budget.setBudgetFreqYearMonthDate(cursor.getString(13));
+				budget.setBudgetFreqYearMonth(cursor.getString(14));
 				// add budget to list
 				budgetList.add(budget);
 			} while (cursor.moveToNext());
@@ -195,6 +207,8 @@ public class BudgetDatabaseHelper extends SQLiteOpenHelper {
 		values.put(COLUMN_NAME_BUDGET_FREQ, budget.getBudgetFreq());
 		values.put(COLUMN_NAME_BUDGET_FREQTYPE, budget.getBudgetFreqType());
 		values.put(COLUMN_NAME_BUDGET_FREQWEEKDAY, budget.getBudgetFreqWeekDay());
+        values.put(COLUMN_NAME_BUDGET_FREQMONTHBUTTONDATE, budget.getBudgetFreqMonthDateButtonBole());
+        values.put(COLUMN_NAME_BUDGET_FREQMONTHBUTTONDAY, budget.getBudgetFreqMonthDayButtonBole());
 		values.put(COLUMN_NAME_BUDGET_FREQMONTHDATE, budget.getBudgetFreqMonthDate());
 		values.put(COLUMN_NAME_BUDGET_FREQMONTHDATEBEFOREAFTER, budget.getBudgetFreqMonthDateBeforeAfter());
 		values.put(COLUMN_NAME_BUDGET_FREQMONTHWEEK, budget.getBudgetFreqMonthWeek());

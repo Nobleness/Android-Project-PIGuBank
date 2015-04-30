@@ -1,2 +1,2 @@
-/media/AndroidSD/16gbSD/Android/Android Projects/PIGuBank/app/build/intermediates/classes/debug
-/media/AndroidSD/16gbSD/Android/Android Projects/PIGuBank/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-4be380e003c34af26ba532046dba0fb6cb67e493.jar
+A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\build\intermediates\classes\debug
+A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-25cc58471b51cdf456c369727730f8f9316a3097.jar

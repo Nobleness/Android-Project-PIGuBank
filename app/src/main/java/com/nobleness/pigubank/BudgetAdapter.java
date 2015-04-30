@@ -77,11 +77,11 @@ public class BudgetAdapter extends ArrayAdapter<String> {
 						editBgt.getBudgetFreqWeekDay());
                 editBgtPref.putString(
                         PIGuActivity.
-                                APP_PREFERENCES_BIDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BUTTON_BOOLEAN,
+                                APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BUTTON_BOOLEAN,
                         editBgt.getBudgetFreqMonthDateButtonBole());
                 editBgtPref.putString(
                         PIGuActivity.
-                                APP_PREFERENCES_BIDGET_FOR_EDIT_BGT_FREQ_MONTH_DAY_BUTTON_BOOLEAN,
+                                APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DAY_BUTTON_BOOLEAN,
                         editBgt.getBudgetFreqMonthDayButtonBole());
 				editBgtPref.putString(
 						PIGuActivity.APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE, 

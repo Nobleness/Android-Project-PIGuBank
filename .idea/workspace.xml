@@ -100,34 +100,20 @@
     <favorites_list name="PIGuBank" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.5778252">
       <split-first>
         <leaf>
-          <file leaf-file-name="BudgetDialogActivity.java" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="BudgetDialogActivity.java" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDialogActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="5440" max-vertical-offset="14552">
-                  <caret line="104" column="52" selection-start-line="104" selection-start-column="52" selection-end-line="104" selection-end-column="52" />
+                <state vertical-scroll-proportion="0.887522" vertical-offset="8250" max-vertical-offset="14569">
+                  <caret line="537" column="35" selection-start-line="537" selection-start-column="35" selection-end-line="537" selection-end-column="35" />
                   <folding>
-                    <element signature="e#18234#18332#0" expanded="true" />
-                    <element signature="e#18325#18326#0" expanded="true" />
-                    <element signature="e#18453#18555#0" expanded="true" />
-                    <element signature="e#18548#18549#0" expanded="true" />
-                    <element signature="e#26167#36081#0" expanded="true" />
-                    <element signature="e#36073#36074#0" expanded="true" />
-                    <element signature="e#36900#37129#0" expanded="true" />
-                    <element signature="e#37123#37124#0" expanded="true" />
+                    <element signature="e#18231#18329#0" expanded="true" />
+                    <element signature="e#18322#18323#0" expanded="true" />
+                    <element signature="e#18450#18552#0" expanded="true" />
+                    <element signature="e#18545#18546#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BudgetDatabaseHelper.java" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDatabaseHelper.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.46450618" vertical-offset="1569" max-vertical-offset="3808">
-                  <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -136,11 +122,21 @@
       </split-first>
       <split-second>
         <leaf>
+          <file leaf-file-name="BudgetDatabaseHelper.java" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDatabaseHelper.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.52397263" vertical-offset="0" max-vertical-offset="4046">
+                  <caret line="25" column="62" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="62" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="PIGuActivity.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/PIGuActivity.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="3298">
-                  <caret line="96" column="60" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
+                <state vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="3298">
+                  <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -149,24 +145,17 @@
           <file leaf-file-name="Budget.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/Budget.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0" vertical-offset="1682" max-vertical-offset="3485">
-                  <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="35" selection-end-column="48" />
-                  <folding>
-                    <element signature="e#4007#4008#0" expanded="true" />
-                    <element signature="e#4045#4046#0" expanded="true" />
-                    <element signature="e#4158#4159#0" expanded="true" />
-                    <element signature="e#4210#4211#0" expanded="true" />
-                    <element signature="e#4532#4533#0" expanded="true" />
-                    <element signature="e#4583#4584#0" expanded="true" />
-                  </folding>
+                <state vertical-scroll-proportion="0.0" vertical-offset="965" max-vertical-offset="3383">
+                  <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BudgetAdapter.java" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="BudgetAdapter.java" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetAdapter.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.8132716" vertical-offset="561" max-vertical-offset="1785">
+                <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
                   <caret line="79" column="98" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="98" />
                   <folding />
                 </state>
@@ -866,7 +855,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetFragmentUpdateList.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_budget_view.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetFragmentListAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDatabaseHelper.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/DialogActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/WidgetActivity.java" />
@@ -887,9 +875,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/bgt_dialog.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetFragmentListView.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/PIGuActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/Budget.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDatabaseHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/PIGuActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDialogActivity.java" />
       </list>
     </option>
@@ -917,7 +906,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages AndroidView="false" />
       <showMembers />
       <showModules />
@@ -928,7 +917,123 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PIGuBank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pigubank" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GoToClass.includeLibraries" value="false" />
@@ -949,7 +1054,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVDldpi_KitKat19" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="LowFi_Android_5_API_21" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -1193,20 +1298,20 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33406594" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25714287" sideWeight="0.49946752" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25714287" sideWeight="0.49946752" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24813631" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33406594" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965606" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31374723" sideWeight="0.49946752" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31318682" sideWeight="0.49946752" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.63046044" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="0" y="166" width="1920" height="819" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.63046044" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" x="51" y="137" width="1808" height="822" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.5330688" sideWeight="0.49933422" order="0" side_tool="false" content_ui="combo" x="82" y="52" width="475" height="1011" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="true" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.5330688" sideWeight="0.49933422" order="0" side_tool="false" content_ui="combo" x="91" y="16" width="475" height="1011" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3278867" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32965606" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5596379" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1287,15 +1392,9 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDatabaseHelper.java</url>
-          <line>60</line>
+          <line>64</line>
           <properties />
           <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDialogActivity.java</url>
-          <line>778</line>
-          <properties />
-          <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDialogActivity.java</url>
@@ -1694,57 +1793,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/PIGuActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="3298">
-          <caret line="96" column="60" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="799" max-vertical-offset="3298">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
+          <caret line="79" column="98" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="98" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/Budget.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="101" max-vertical-offset="3485">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="35" selection-end-column="48" />
-          <folding>
-            <element signature="e#4007#4008#0" expanded="true" />
-            <element signature="e#4045#4046#0" expanded="true" />
-            <element signature="e#4158#4159#0" expanded="true" />
-            <element signature="e#4210#4211#0" expanded="true" />
-            <element signature="e#4532#4533#0" expanded="true" />
-            <element signature="e#4583#4584#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="965" max-vertical-offset="3383">
+          <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDatabaseHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8132716" vertical-offset="561" max-vertical-offset="1785">
-          <caret line="79" column="98" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="98" />
+        <state vertical-scroll-proportion="0.52397263" vertical-offset="0" max-vertical-offset="4046">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDialogActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5440" max-vertical-offset="14552">
-          <caret line="104" column="52" selection-start-line="104" selection-start-column="52" selection-end-line="104" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.887522" vertical-offset="8250" max-vertical-offset="14569">
+          <caret line="537" column="35" selection-start-line="537" selection-start-column="35" selection-end-line="537" selection-end-column="35" />
           <folding>
-            <element signature="e#18234#18332#0" expanded="true" />
-            <element signature="e#18325#18326#0" expanded="true" />
-            <element signature="e#18453#18555#0" expanded="true" />
-            <element signature="e#18548#18549#0" expanded="true" />
-            <element signature="e#26167#36081#0" expanded="true" />
-            <element signature="e#36073#36074#0" expanded="true" />
-            <element signature="e#36900#37129#0" expanded="true" />
-            <element signature="e#37123#37124#0" expanded="true" />
+            <element signature="e#18231#18329#0" expanded="true" />
+            <element signature="e#18322#18323#0" expanded="true" />
+            <element signature="e#18450#18552#0" expanded="true" />
+            <element signature="e#18545#18546#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/nobleness/pigubank/BudgetDatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46450618" vertical-offset="1569" max-vertical-offset="3808">
-          <caret line="119" column="36" selection-start-line="119" selection-start-column="36" selection-end-line="119" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>

@@ -232,6 +232,25 @@ public class BudgetFragmentListView extends ListFragment {
                         // calculate when budget resets by month week
                         //
                         //
+                        int iterWeek = Integer.parseInt(bgt.getBudgetFreqMonthWeek());
+                        int iterWeekday = Integer.parseInt(bgt.getBudgetFreqMonthWeekDay());
+                        int iSumToAdd = 0;
+                        Calendar cFreqMonthWeek = Calendar.getInstance();
+                        cFreqMonthWeek.getTime();
+                        //cFreqMonthWeek.set(Calendar.MONTH, );
+                        cFreqMonthWeek.set(Calendar.DAY_OF_MONTH, 1);
+                        for (int i = 0; i != iterWeekday; i++){
+                            while (cFreqMonthWeek.get(Calendar.DAY_OF_WEEK) != iterWeekday) {
+                                iSumToAdd++;
+                            }
+
+                        }
+
+
+
+
+
+
 
 
                     } else {

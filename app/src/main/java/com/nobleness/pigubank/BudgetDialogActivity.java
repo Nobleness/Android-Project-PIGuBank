@@ -106,12 +106,6 @@ SharedPreferences appPref;
 		sPfreqMonthWeekDay.setVisibility(View.VISIBLE);
 		bNfreqDate.setEnabled(true);
 		bNfreqDay.setEnabled(false);
-        Editor editor = appPref.edit();
-        editor.putString(APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BUTTON_BOOLEAN,
-                "true");
-        editor.putString(APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DAY_BUTTON_BOOLEAN,
-                "");
-        editor.commit();
 	}
 	
 	protected void enableDayButton() {
@@ -124,12 +118,6 @@ SharedPreferences appPref;
 		sPfreqMonthWeekDay.setSelection(0);
 		bNfreqDate.setEnabled(false);
 		bNfreqDay.setEnabled(true);
-        Editor editor = appPref.edit();
-        editor.putString(APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BUTTON_BOOLEAN,
-                "");
-        editor.putString(APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DAY_BUTTON_BOOLEAN,
-                "true");
-        editor.commit();
 	}
 	
 	// visiblity methods
@@ -166,11 +154,11 @@ SharedPreferences appPref;
 		sPfreqWeekDay.setSelection(0);
 		if (appPref.getString(
                 APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BUTTON_BOOLEAN, "")
-                == "true"){
+                .contains("true")){
             enableDateButton();
 		} else if (appPref.getString(
                 APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DAY_BUTTON_BOOLEAN, "")
-                == "true"){
+                .contains("true")){
 			enableDayButton();
 		} else {
             bNfreqDate.setEnabled(true);
@@ -371,8 +359,8 @@ SharedPreferences appPref;
 							{	
 								Editor editor = appPref.edit();
 								editor.putString(
-                                        APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BEFORE_AFTER,
-										Integer.toString(selectedItemPosition));
+                                APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BEFORE_AFTER,
+                                Integer.toString(selectedItemPosition));
 								editor.commit();
 							}	
 				public void onNothingSelected(AdapterView<?> parent) {
@@ -586,8 +574,8 @@ SharedPreferences appPref;
                                             APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE,
                                             "0")));
 							fMonthDateBefAfSpin.setSelection(Integer.parseInt(appPref.getString(
-                                    APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BEFORE_AFTER,
-                                    "0")));
+                                APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BEFORE_AFTER,
+                                "0")));
 							fMonthWeekSpin.setSelection(
                                     Integer.parseInt(appPref.getString(
                                             APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_WEEK,
@@ -600,8 +588,8 @@ SharedPreferences appPref;
 						case 3:
 							fYearMonthDateSpin.setSelection(
                                     Integer.parseInt(appPref.getString(
-                                            APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_YEAR_MONTH_DATE,
-                                            "0")));
+                                        APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_YEAR_MONTH_DATE,
+                                        "0")));
 							fYearMonthSpin.setSelection(
                                     Integer.parseInt(appPref.getString(
                                             APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_YEAR_MONTH,
@@ -690,16 +678,19 @@ SharedPreferences appPref;
 							String strFreqWeekDay = Integer.toString(
                                     sPfreqWeekDay.getSelectedItemPosition());
                             String strFreqMonthDateButtonBole;
-                            if (bNfreqDate.isEnabled()){
+                            String strFreqMonthDayButtonBole;
+                            if (bNfreqDate.isEnabled() && bNfreqDay.isEnabled() ){
+                                strFreqMonthDateButtonBole = "true";
+                                strFreqMonthDayButtonBole = "true";
+                            } else if (bNfreqDay.isEnabled()){
+                                strFreqMonthDayButtonBole = "true";
+                                strFreqMonthDateButtonBole = "";
+                            } else if (bNfreqDate.isEnabled()) {
+                                strFreqMonthDayButtonBole = "";
                                 strFreqMonthDateButtonBole = "true";
                             } else {
-                                strFreqMonthDateButtonBole = "";
-                            }
-                            String strFreqMonthDayButtonBole;
-                            if (bNfreqDay.isEnabled()){
-                                strFreqMonthDayButtonBole = "true";
-                            } else {
                                 strFreqMonthDayButtonBole = "";
+                                strFreqMonthDateButtonBole = "";
                             }
 							String strFreqMonthDate = Integer.toString(
                                     sPfreqMonthDate.getSelectedItemPosition());
@@ -793,14 +784,8 @@ SharedPreferences appPref;
                                     case 2:
                                         editAcc.setBudgetFreqWeekDay("0");
                                         if (strFreqMonthDateButtonBole == "true") {
-                                            editAcc.setBudgetFreqMonthDateButtonBole(
-                                                    appPref.getString(
-                                                            APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BUTTON_BOOLEAN,
-                                                            "true"));
-                                            editAcc.setBudgetFreqMonthDayButtonBole(
-                                                    appPref.getString(
-                                                            APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DAY_BUTTON_BOOLEAN,
-                                                            "false"));
+                                            editAcc.setBudgetFreqMonthDateButtonBole("true");
+                                            editAcc.setBudgetFreqMonthDayButtonBole("");
                                             editAcc.setBudgetFreqMonthDate("0");
                                             editAcc.setBudgetFreqMonthDateBeforeAfter(
                                                     "0");
@@ -809,14 +794,8 @@ SharedPreferences appPref;
                                             editAcc.setBudgetFreqYearMonthDate("0");
                                             editAcc.setBudgetFreqYearMonth("0");
                                         } else if (strFreqMonthDayButtonBole == "true"){
-                                            editAcc.setBudgetFreqMonthDateButtonBole(
-                                                    appPref.getString(
-                                                            APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BUTTON_BOOLEAN,
-                                                            "false"));
-                                            editAcc.setBudgetFreqMonthDayButtonBole(
-                                                    appPref.getString(
-                                                            APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DAY_BUTTON_BOOLEAN,
-                                                            "true"));
+                                            editAcc.setBudgetFreqMonthDateButtonBole("");
+                                            editAcc.setBudgetFreqMonthDayButtonBole("true");
                                             editAcc.setBudgetFreqMonthDate(strFreqMonthDate);
                                             editAcc.setBudgetFreqMonthDateBeforeAfter(
                                                     strFreqMonthDateBeforeAfter);

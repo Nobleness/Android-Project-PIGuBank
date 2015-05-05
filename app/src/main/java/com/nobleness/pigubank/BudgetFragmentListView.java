@@ -232,19 +232,47 @@ public class BudgetFragmentListView extends ListFragment {
                         // calculate when budget resets by month week
                         //
                         //
-                        int iterWeek = Integer.parseInt(bgt.getBudgetFreqMonthWeek());
-                        int iterWeekday = Integer.parseInt(bgt.getBudgetFreqMonthWeekDay());
-                        int iSumToAdd = 0;
-                        Calendar cFreqMonthWeek = Calendar.getInstance();
-                        cFreqMonthWeek.getTime();
-                        //cFreqMonthWeek.set(Calendar.MONTH, );
-                        cFreqMonthWeek.set(Calendar.DAY_OF_MONTH, 1);
-                        for (int i = 0; i != iterWeekday; i++){
-                            while (cFreqMonthWeek.get(Calendar.DAY_OF_WEEK) != iterWeekday) {
-                                iSumToAdd++;
+                        int fWeek = Integer.parseInt(bgt.getBudgetFreqMonthWeek());
+                        int fWeekday = Integer.parseInt(bgt.getBudgetFreqMonthWeekDay());
+                        int iterSum = 0;
+                        int iterSince = 0;
+                        Calendar calDayOfMonth = Calendar.getInstance();
+                        calDayOfMonth.getTime();
+                        calDayOfMonth.set(Calendar.DAY_OF_MONTH, 1);
+                        //for (int i = 0; i < iBgtFreq; i++)
+                        boolean loopBreak = false;
+                        int iterLoop = 1;
+                        int iterWeekLoop = 1;
+
+                        while (loopBreak != true) {
+                            //int iDayOfMonth = calDayOfMonth.get(Calendar.DAY_OF_MONTH);
+                            int iDayOfWeek = calDayOfMonth.get(Calendar.DAY_OF_WEEK);
+                            int iMaxDays = calDayOfMonth.getActualMaximum(Calendar.DAY_OF_MONTH);
+                            if (iterSum == iMaxDays) {
+                                if (iterLoop == iBgtFreq){
+                                    //iterSum = iterSum - iterSince;
+                                    loopBreak = true;
+                                } else {
+                                    Log.i(PIGuActivity.APP_LOG, "Before adding month: " +
+                                            calDayOfMonth);
+                                    calDayOfMonth.add(Calendar.MONTH, 1);
+                                    calDayOfMonth.set(Calendar.DAY_OF_MONTH, 1);
+                                    Log.i(PIGuActivity.APP_LOG, "after adding month: " +
+                                            calDayOfMonth);
+                                }
                             }
+                            if (fWeekday != iDayOfWeek) {
+                                iterSum++;
+                            } else if (fWeek != iterWeekLoop) {
+
+                            }
+                            calDayOfMonth.add(Calendar.DAY_OF_MONTH, 1);
 
                         }
+
+                        // calc text of budget resets from iterSum
+
+
 
 
 

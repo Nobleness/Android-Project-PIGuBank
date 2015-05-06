@@ -97,7 +97,7 @@ public class BudgetFragmentListView extends ListFragment {
                 case 1:
                     String strBgtFreqWeekday = bgt.getBudgetFreqWeekDay();
                     int freqMultiplier = 0;
-                    if (strBgtFreqWeekday == "0") {
+                    if (strBgtFreqWeekday == "0" || iBgtFreq == 0) {
                         String sFreqWeekNotSet = "Budget frequency by weekday not set";
                         aListBgtReset.add(sFreqWeekNotSet);
                     } else {
@@ -137,12 +137,23 @@ public class BudgetFragmentListView extends ListFragment {
                     int iCurWeekday = c.get(Calendar.DAY_OF_WEEK);
                     int iFreqDateOfMonth = Integer.parseInt(strBgtFreqMonthDate);
 
+                    String sDayButtonBoolean = bgt.getBudgetFreqMonthDayButtonBole();
+                    String sDateButtonBoolean = bgt.getBudgetFreqMonthDateButtonBole();
+                    Boolean bDayButtonBoolean = false;
+                    Boolean bDateButtonBoolean = false;
+                    if (sDayButtonBoolean.contains("true")) {
+                        bDayButtonBoolean = true;
+                    }
+                    if (sDateButtonBoolean.contains("true")) {
+                        bDateButtonBoolean = true;
+                    }
+
                     Calendar cFreqMonth = Calendar.getInstance();
                     cFreqMonth.getTime();
                     cFreqMonth.set(Calendar.DAY_OF_MONTH, iFreqDateOfMonth);
                     int freqWeekday = cFreqMonth.get(Calendar.DAY_OF_WEEK);
 
-                    if (strBgtFreqMonthDate != "0") {
+                    if (bDateButtonBoolean != true && iBgtFreq != 0) {
                         // calculate when budget resets by month date
                         // LOG
                         Log.i(PIGuActivity.APP_LOG, "Current date in calendar: " + c);
@@ -227,7 +238,7 @@ public class BudgetFragmentListView extends ListFragment {
                                     + e );
                         }
 
-                    } else if (strBgtFreqMonthWeek != "0") {
+                    } else if (bDayButtonBoolean != true && iBgtFreq != 0) {
                         //
                         // calculate when budget resets by month week
                         //
@@ -235,60 +246,78 @@ public class BudgetFragmentListView extends ListFragment {
                         int fWeek = Integer.parseInt(bgt.getBudgetFreqMonthWeek());
                         int fWeekday = Integer.parseInt(bgt.getBudgetFreqMonthWeekDay());
                         int iterSum = 0;
-                        int iterSince = 0;
                         Calendar calDayOfMonth = Calendar.getInstance();
                         calDayOfMonth.getTime();
                         calDayOfMonth.set(Calendar.DAY_OF_MONTH, 1);
-                        //for (int i = 0; i < iBgtFreq; i++)
                         boolean loopBreak = false;
-                        int iterLoop = 1;
-                        int iterWeekLoop = 1;
 
-                        while (loopBreak != true) {
-                            //int iDayOfMonth = calDayOfMonth.get(Calendar.DAY_OF_MONTH);
+
+                        do {
+                            int iterLoop = 1;
+                            int iterWeekLoop = 1;
                             int iDayOfWeek = calDayOfMonth.get(Calendar.DAY_OF_WEEK);
                             int iMaxDays = calDayOfMonth.getActualMaximum(Calendar.DAY_OF_MONTH);
-                            if (iterSum == iMaxDays) {
-                                if (iterLoop == iBgtFreq){
-                                    //iterSum = iterSum - iterSince;
-                                    loopBreak = true;
-                                } else {
+                            if (iterSum > iMaxDays) {
                                     Log.i(PIGuActivity.APP_LOG, "Before adding month: " +
                                             calDayOfMonth);
                                     calDayOfMonth.add(Calendar.MONTH, 1);
                                     calDayOfMonth.set(Calendar.DAY_OF_MONTH, 1);
                                     Log.i(PIGuActivity.APP_LOG, "after adding month: " +
                                             calDayOfMonth);
-                                }
                             }
-                            if (fWeekday != iDayOfWeek) {
-                                iterSum++;
-                            } else if (fWeek != iterWeekLoop) {
+                            if (iDayOfWeek == fWeekday
+                                    && iterWeekLoop == fWeek
+                                    && iterLoop == iBgtFreq
+                                    ) {
+                                    // when freq weekday, week and iter match
 
+                                loopBreak = true;
+
+                                break;
+                            } else if (iterWeekLoop == fWeek) {
+                                iterLoop++;
+                                iterSum++;
+                            } else if (iDayOfWeek == fWeek){
+                                iterWeekLoop++;
+                                iterSum++;
                             }
                             calDayOfMonth.add(Calendar.DAY_OF_MONTH, 1);
 
+                            Log.i(PIGuActivity.APP_LOG, "iterSum= " +
+                                    iterSum);
+                            Log.i(PIGuActivity.APP_LOG, "iterWeekLoop= " +
+                                    iterWeekLoop);
+                            Log.i(PIGuActivity.APP_LOG, "iterLoop= " +
+                                    iterLoop);
+                        } while (loopBreak = false);
+                        // calc when budget resets from iterSum
+
+                        int iTotalDays = iterSum - iCurDateOfMonth;
+
+                        String sBgtResets = Integer.toString(iTotalDays);
+                        if (iTotalDays > 0) {
+                            String sResetInX = "Budget resets in " + sBgtResets + " Days";
+                            aListBgtReset.add(sResetInX);
+                        } else if (iTotalDays == 1) {
+                            String sResetToday = "Budget resets tomorrow";
+                            aListBgtReset.add(sResetToday);
+                        } else if (iTotalDays == 0) {
+                            String sResetIn1 = "Budget reset today";
+                            aListBgtReset.add(sResetIn1);
+                        } else {
+                            // fault in calc
+                            Log.i(PIGuActivity.APP_LOG, "Error in " +
+                                    "BudgetFragmentListView: Budget rest " +
+                                    "calculation is less than 0");
                         }
-
-                        // calc text of budget resets from iterSum
-
-
-
-
-
-
-
-
-
-
                     } else {
                         String sFreqMonthNotSet = "Budget frequency by month not set";
                         aListBgtReset.add(sFreqMonthNotSet);
-                    }
+                        }
                     break;
                 case 3:
                     String strBgtFreqYearMonth = bgt.getBudgetFreqYearMonth();
-                    if (strBgtFreqYearMonth != "0") {
+                    if (strBgtFreqYearMonth != "0" || iBgtFreq != 0) {
                         //
                         // calculate when budget resets by year
                         //

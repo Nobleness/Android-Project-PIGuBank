@@ -163,6 +163,7 @@ public class Budget {
     public String getBudgetFreqMonthDateButtonBole(){
         return this._freqmonthdatebuttonbole;
     }
+
     //setting budget freq button boolean of month by date
     public void setBudgetFreqMonthDateButtonBole(String freqmonthdatebuttonbole){
         this._freqmonthdatebuttonbole = freqmonthdatebuttonbole;

@@ -133,6 +133,7 @@ public class BudgetFragmentListView extends ListFragment {
                     String strBgtFreqMonthDate = bgt.getBudgetFreqMonthDate();
                     String strBgtFreqMonthWeek = bgt.getBudgetFreqMonthWeek();
                     int iCurDateOfMonth = c.get(Calendar.DAY_OF_MONTH);
+                    int iCurMonth = c.get(Calendar.MONTH);
                     int iDaysCurMonth = c.getActualMaximum(Calendar.DAY_OF_MONTH);
                     int iCurWeekday = c.get(Calendar.DAY_OF_WEEK);
                     int iFreqDateOfMonth = Integer.parseInt(strBgtFreqMonthDate);
@@ -243,56 +244,127 @@ public class BudgetFragmentListView extends ListFragment {
                         // calculate when budget resets by month week
                         //
                         //
-                        int fWeek = Integer.parseInt(bgt.getBudgetFreqMonthWeek());
-                        int fWeekday = Integer.parseInt(bgt.getBudgetFreqMonthWeekDay());
-                        int iterSum = 0;
+                        int iBgtWeek = Integer.parseInt(bgt.getBudgetFreqMonthWeek());
+                        int iBgtWeekday = Integer.parseInt(bgt.getBudgetFreqMonthWeekDay());
+                        int iSum = 0;
+                        int iSumSinceWDMatch = 0;
+                        boolean bWDMatch = false;
+                        int iLoopFreq = 1;
+                        int iLoopWeek = 1;
                         Calendar calDayOfMonth = Calendar.getInstance();
                         calDayOfMonth.getTime();
                         calDayOfMonth.set(Calendar.DAY_OF_MONTH, 1);
                         boolean loopBreak = false;
+////////////////////////////////////////////////////////////////////////////
+                        while (true){
 
-
-                        do {
-                            int iterLoop = 1;
-                            int iterWeekLoop = 1;
-                            int iDayOfWeek = calDayOfMonth.get(Calendar.DAY_OF_WEEK);
+                            int iWeekday = calDayOfMonth.get(Calendar.DAY_OF_WEEK);
+                            int iMonth = calDayOfMonth.get(Calendar.MONTH);
+                            int iDateofMonth = calDayOfMonth.get(Calendar.DAY_OF_MONTH);
                             int iMaxDays = calDayOfMonth.getActualMaximum(Calendar.DAY_OF_MONTH);
-                            if (iterSum > iMaxDays) {
-                                    Log.i(PIGuActivity.APP_LOG, "Before adding month: " +
-                                            calDayOfMonth);
-                                    calDayOfMonth.add(Calendar.MONTH, 1);
-                                    calDayOfMonth.set(Calendar.DAY_OF_MONTH, 1);
-                                    Log.i(PIGuActivity.APP_LOG, "after adding month: " +
-                                            calDayOfMonth);
+                            if (iSum > iMaxDays) {
+                                if (iBgtWeek == 4 || iBgtWeek == 5) {
+                                    if (iLoopFreq == iBgtFreq){
+                                        iSum++;
+                                        iSum = iSum - iSumSinceWDMatch;
+                                        Log.i(PIGuActivity.APP_LOG, "---------------- \n");
+                                        Log.i(PIGuActivity.APP_LOG, "Break after " +
+                                                "last week in month and iLoopFreq == iBgtFreq");
+                                        Log.i(PIGuActivity.APP_LOG, "iSum= " +
+                                                iSum);
+                                        Log.i(PIGuActivity.APP_LOG, "iSumSinceWDMatch= " +
+                                                iSumSinceWDMatch);
+                                        Log.i(PIGuActivity.APP_LOG, "iLoopWeek= " +
+                                                iLoopWeek);
+                                        Log.i(PIGuActivity.APP_LOG, "iBgtWeek= " +
+                                                iBgtWeek);
+                                        Log.i(PIGuActivity.APP_LOG, "iLoopFreq= " +
+                                                iLoopFreq);
+                                        Log.i(PIGuActivity.APP_LOG, "iBgtFreq= " +
+                                                iBgtFreq);
+                                        Log.i(PIGuActivity.APP_LOG, "\n ----------------");
+                                        break;
+                                    } else if (iLoopFreq < iBgtFreq) {
+                                        //do nothing
+                                    }
+                                }
+                                Log.i(PIGuActivity.APP_LOG, "Before adding month: " +
+                                        calDayOfMonth);
+                                calDayOfMonth.add(Calendar.MONTH, 1);
+                                calDayOfMonth.set(Calendar.DAY_OF_MONTH, 1);
+                                iLoopWeek = 1;
+                                iSumSinceWDMatch = 0;
+                                Log.i(PIGuActivity.APP_LOG, "after adding month: " +
+                                        calDayOfMonth);
                             }
-                            if (iDayOfWeek == fWeekday
-                                    && iterWeekLoop == fWeek
-                                    && iterLoop == iBgtFreq
-                                    ) {
-                                    // when freq weekday, week and iter match
 
-                                loopBreak = true;
-
-                                break;
-                            } else if (iterWeekLoop == fWeek) {
-                                iterLoop++;
-                                iterSum++;
-                            } else if (iDayOfWeek == fWeek){
-                                iterWeekLoop++;
-                                iterSum++;
+                            if (iWeekday == iBgtWeekday) {
+                                if (iLoopWeek == iBgtWeek) {
+                                    if (iLoopFreq == iBgtFreq){
+                                        if (iCurDateOfMonth > iDateofMonth &&
+                                                iCurMonth == iMonth) {
+                                            //do nothing
+                                        } else {
+                                            iSum++;
+                                            Log.i(PIGuActivity.APP_LOG, "-------------- \n");
+                                            Log.i(PIGuActivity.APP_LOG, "Break after " +
+                                                    "iLoopFreq == iBgtFreq");
+                                            Log.i(PIGuActivity.APP_LOG, "iSum= " +
+                                                    iSum);
+                                            Log.i(PIGuActivity.APP_LOG, "iSumSinceWDMatch= " +
+                                                    iSumSinceWDMatch);
+                                            Log.i(PIGuActivity.APP_LOG, "iLoopWeek= " +
+                                                    iLoopWeek);
+                                            Log.i(PIGuActivity.APP_LOG, "iBgtWeek= " +
+                                                    iBgtWeek);
+                                            Log.i(PIGuActivity.APP_LOG, "iLoopFreq= " +
+                                                    iLoopFreq);
+                                            Log.i(PIGuActivity.APP_LOG, "iBgtFreq= " +
+                                                    iBgtFreq);
+                                            Log.i(PIGuActivity.APP_LOG, "\n ----------------");
+                                            break;
+                                        }
+                                    } else if (iLoopFreq < iBgtFreq) {
+                                        if (iCurDateOfMonth > iDateofMonth &&
+                                                iCurMonth == iMonth)  {
+                                            //do nothing
+                                        } else {
+                                            iLoopFreq++;
+                                        }
+                                    }
+                                } else if (iLoopWeek < iBgtWeek) {
+                                    iLoopWeek++;
+                                }
+                                iSumSinceWDMatch = 0;
+                                bWDMatch = true;
                             }
+                            if (bWDMatch == true) {
+                                iSumSinceWDMatch++;
+                            } else if (iSumSinceWDMatch > 0) {
+                                iSumSinceWDMatch++;
+                            }
+                            iSum++;
                             calDayOfMonth.add(Calendar.DAY_OF_MONTH, 1);
-
-                            Log.i(PIGuActivity.APP_LOG, "iterSum= " +
-                                    iterSum);
-                            Log.i(PIGuActivity.APP_LOG, "iterWeekLoop= " +
-                                    iterWeekLoop);
-                            Log.i(PIGuActivity.APP_LOG, "iterLoop= " +
-                                    iterLoop);
-                        } while (loopBreak = false);
+                            Log.i(PIGuActivity.APP_LOG, "-------------- \n");
+                            Log.i(PIGuActivity.APP_LOG, "while iteration end");
+                            Log.i(PIGuActivity.APP_LOG, "iSum= " +
+                                    iSum);
+                            Log.i(PIGuActivity.APP_LOG, "iSumSinceWDMatch= " +
+                                    iSumSinceWDMatch);
+                            Log.i(PIGuActivity.APP_LOG, "iLoopWeek= " +
+                                    iLoopWeek);
+                            Log.i(PIGuActivity.APP_LOG, "iBgtWeek= " +
+                                    iBgtWeek);
+                            Log.i(PIGuActivity.APP_LOG, "iLoopFreq= " +
+                                    iLoopFreq);
+                            Log.i(PIGuActivity.APP_LOG, "iBgtFreq= " +
+                                    iBgtFreq);
+                            Log.i(PIGuActivity.APP_LOG, "\n ----------------");
+                        }
+////////////////////////////////////////////////////////////////////////////
                         // calc when budget resets from iterSum
 
-                        int iTotalDays = iterSum - iCurDateOfMonth;
+                        int iTotalDays = iSum - iCurDateOfMonth;
 
                         String sBgtResets = Integer.toString(iTotalDays);
                         if (iTotalDays > 0) {

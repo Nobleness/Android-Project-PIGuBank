@@ -248,22 +248,33 @@ public class BudgetFragmentListView extends ListFragment {
                         int iBgtWeekday = Integer.parseInt(bgt.getBudgetFreqMonthWeekDay());
                         int iSum = 0;
                         int iSumSinceWDMatch = 0;
+                        int iSumSinceMMaxDays = 0;
                         boolean bWDMatch = false;
-                        int iLoopFreq = 1;
-                        int iLoopWeek = 1;
+                        boolean bMMaxDays = false;
+                        int iLoopFreq = 0;
+                        int iLoopWeek = 0;
                         Calendar calDayOfMonth = Calendar.getInstance();
                         calDayOfMonth.getTime();
                         calDayOfMonth.set(Calendar.DAY_OF_MONTH, 1);
-                        boolean loopBreak = false;
 ////////////////////////////////////////////////////////////////////////////
                         while (true){
-
+                            if (bMMaxDays = true) {
+                                iSumSinceMMaxDays++;
+                            }
                             int iWeekday = calDayOfMonth.get(Calendar.DAY_OF_WEEK);
                             int iMonth = calDayOfMonth.get(Calendar.MONTH);
                             int iDateofMonth = calDayOfMonth.get(Calendar.DAY_OF_MONTH);
                             int iMaxDays = calDayOfMonth.getActualMaximum(Calendar.DAY_OF_MONTH);
-                            if (iSum > iMaxDays) {
+                            Log.i(PIGuActivity.APP_LOG, "iSumSinceMMaxDays= " +
+                                    iSumSinceMMaxDays);
+                            Log.i (PIGuActivity.APP_LOG, "Actual Maximum days: " + iMaxDays);
+
+                            if (iSumSinceMMaxDays == iMaxDays) {
+                                bMMaxDays = false;
                                 if (iBgtWeek == 4 || iBgtWeek == 5) {
+                                    if (iLoopWeek > 0) {
+                                        iLoopFreq++;
+                                    }
                                     if (iLoopFreq == iBgtFreq){
                                         iSum++;
                                         iSum = iSum - iSumSinceWDMatch;
@@ -284,22 +295,30 @@ public class BudgetFragmentListView extends ListFragment {
                                                 iBgtFreq);
                                         Log.i(PIGuActivity.APP_LOG, "\n ----------------");
                                         break;
-                                    } else if (iLoopFreq < iBgtFreq) {
-                                        //do nothing
                                     }
                                 }
                                 Log.i(PIGuActivity.APP_LOG, "Before adding month: " +
                                         calDayOfMonth);
-                                calDayOfMonth.add(Calendar.MONTH, 1);
+
                                 calDayOfMonth.set(Calendar.DAY_OF_MONTH, 1);
-                                iLoopWeek = 1;
+                                calDayOfMonth.add(Calendar.MONTH, 1);
+                                iLoopWeek = 0;
                                 iSumSinceWDMatch = 0;
+                                iSumSinceMMaxDays = 0;
+                                iWeekday = calDayOfMonth.get(Calendar.DAY_OF_WEEK);
+                                iMonth = calDayOfMonth.get(Calendar.MONTH);
+                                iDateofMonth = calDayOfMonth.get(Calendar.DAY_OF_MONTH);
+
                                 Log.i(PIGuActivity.APP_LOG, "after adding month: " +
                                         calDayOfMonth);
                             }
 
                             if (iWeekday == iBgtWeekday) {
+                                iLoopWeek++;
+                                iSumSinceWDMatch = 0;
+                                bWDMatch = true;
                                 if (iLoopWeek == iBgtWeek) {
+                                    iLoopFreq++;
                                     if (iLoopFreq == iBgtFreq){
                                         if (iCurDateOfMonth > iDateofMonth &&
                                                 iCurMonth == iMonth) {
@@ -313,6 +332,8 @@ public class BudgetFragmentListView extends ListFragment {
                                                     iSum);
                                             Log.i(PIGuActivity.APP_LOG, "iSumSinceWDMatch= " +
                                                     iSumSinceWDMatch);
+                                            Log.i(PIGuActivity.APP_LOG, "iSumSinceMMaxDays= " +
+                                                    iSumSinceMMaxDays);
                                             Log.i(PIGuActivity.APP_LOG, "iLoopWeek= " +
                                                     iLoopWeek);
                                             Log.i(PIGuActivity.APP_LOG, "iBgtWeek= " +
@@ -324,25 +345,18 @@ public class BudgetFragmentListView extends ListFragment {
                                             Log.i(PIGuActivity.APP_LOG, "\n ----------------");
                                             break;
                                         }
-                                    } else if (iLoopFreq < iBgtFreq) {
-                                        if (iCurDateOfMonth > iDateofMonth &&
-                                                iCurMonth == iMonth)  {
-                                            //do nothing
-                                        } else {
-                                            iLoopFreq++;
-                                        }
                                     }
-                                } else if (iLoopWeek < iBgtWeek) {
-                                    iLoopWeek++;
                                 }
-                                iSumSinceWDMatch = 0;
-                                bWDMatch = true;
+
+                            }
+                            if (iSumSinceWDMatch > 0) {
+                                iSumSinceWDMatch++;
                             }
                             if (bWDMatch == true) {
                                 iSumSinceWDMatch++;
-                            } else if (iSumSinceWDMatch > 0) {
-                                iSumSinceWDMatch++;
+                                bWDMatch = false;
                             }
+                            bMMaxDays = true;
                             iSum++;
                             calDayOfMonth.add(Calendar.DAY_OF_MONTH, 1);
                             Log.i(PIGuActivity.APP_LOG, "-------------- \n");
@@ -351,6 +365,8 @@ public class BudgetFragmentListView extends ListFragment {
                                     iSum);
                             Log.i(PIGuActivity.APP_LOG, "iSumSinceWDMatch= " +
                                     iSumSinceWDMatch);
+                            Log.i(PIGuActivity.APP_LOG, "iSumSinceMMaxDays= " +
+                                    iSumSinceMMaxDays);
                             Log.i(PIGuActivity.APP_LOG, "iLoopWeek= " +
                                     iLoopWeek);
                             Log.i(PIGuActivity.APP_LOG, "iBgtWeek= " +

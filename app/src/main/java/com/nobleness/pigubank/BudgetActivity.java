@@ -67,6 +67,10 @@ public class BudgetActivity extends PIGuActivity {
 	public void onClickAddBudgetButton(View view) {
 		Editor updateBolean = appPref.edit();
 		updateBolean.putBoolean(APP_PREFERENCES_LAUNCHED_ADD_BUDGET_DIALOG, true);
+		updateBolean.putString(APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DATE_BUTTON_BOOLEAN,
+				"");
+		updateBolean.putString(APP_PREFERENCES_BUDGET_FOR_EDIT_BGT_FREQ_MONTH_DAY_BUTTON_BOOLEAN,
+				"");
 		updateBolean.commit();
 		startActivity(new Intent(BudgetActivity.this, BudgetDialogActivity.class));	
 	}

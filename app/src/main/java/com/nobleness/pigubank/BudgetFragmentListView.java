@@ -252,6 +252,10 @@ public class BudgetFragmentListView extends ListFragment {
                         boolean bWDMatch = false;
                         boolean bMMaxMatch = false;
 
+                        String sBgtResetDay = "0";
+                        String sBgtResetMonth = "0";
+                        String sBgtResetYear = "0";
+
                         int iLoopFreq = 0;
                         int iLoopWeek = 0;
                         Calendar calDayOfMonth = Calendar.getInstance();
@@ -297,6 +301,15 @@ public class BudgetFragmentListView extends ListFragment {
                                         Log.i(PIGuActivity.APP_LOG, "iBgtFreq= " +
                                                 iBgtFreq);
                                         Log.i(PIGuActivity.APP_LOG, "\n ----------------");
+                                        sBgtResetDay =
+                                                Integer.toString(
+                                                        calDayOfMonth.get(Calendar.DAY_OF_MONTH));
+                                        sBgtResetMonth =
+                                                Integer.toString(
+                                                        calDayOfMonth.get(Calendar.MONTH));
+                                        sBgtResetYear =
+                                                Integer.toString(
+                                                        calDayOfMonth.get(Calendar.YEAR));
                                         break;
                                     }
                                 }
@@ -346,14 +359,25 @@ public class BudgetFragmentListView extends ListFragment {
                                             Log.i(PIGuActivity.APP_LOG, "iBgtFreq= " +
                                                     iBgtFreq);
                                             Log.i(PIGuActivity.APP_LOG, "\n ----------------");
+                                            sBgtResetDay =
+                                                    Integer.toString(
+                                                            calDayOfMonth.get(
+                                                                    Calendar.DAY_OF_MONTH));
+                                            sBgtResetMonth =
+                                                    Integer.toString(
+                                                            calDayOfMonth.get(Calendar.MONTH));
+                                            sBgtResetYear =
+                                                    Integer.toString(
+                                                            calDayOfMonth.get(Calendar.YEAR));
                                             break;
                                         }
                                     }
                                 }
-
-
                             }
 
+
+                            // add to iteration count for count since last week
+                            // and count of days in current month
                             if (bWDMatch == true) {
                                 iSumSinceWDMatch++;
                                 bWDMatch = false;
@@ -366,6 +390,7 @@ public class BudgetFragmentListView extends ListFragment {
                             } else {
                                 iSumMMaxDays++;
                             }
+                            // end of first loop add to iteration count
                             iSum++;
                             calDayOfMonth.add(Calendar.DAY_OF_MONTH, 1);
                             Log.i(PIGuActivity.APP_LOG, "-------------- \n");
@@ -389,17 +414,29 @@ public class BudgetFragmentListView extends ListFragment {
 ////////////////////////////////////////////////////////////////////////////
                         // calc when budget resets from iterSum
 
+                        Log.i(PIGuActivity.APP_LOG,
+                                "values before calculation: \n" +
+                                "iSum: " + iSum + " \n" +
+                                "iCurDateOfMonth: " + iCurDateOfMonth
+                        );
+
                         int iTotalDays = iSum - iCurDateOfMonth;
 
                         String sBgtResets = Integer.toString(iTotalDays);
                         if (iTotalDays > 0) {
-                            String sResetInX = "Budget resets in " + sBgtResets + " Days";
+                            String sResetInX = "Budget resets in " + sBgtResets + " Days" +
+                                    " on: " +
+                                    sBgtResetDay +"/" + sBgtResetMonth + "/" + sBgtResetYear;
                             aListBgtReset.add(sResetInX);
                         } else if (iTotalDays == 1) {
-                            String sResetToday = "Budget resets tomorrow";
+                            String sResetToday = "Budget resets tomorrow" +
+                                    " on: " +
+                                    sBgtResetDay +"/" + sBgtResetMonth + "/" + sBgtResetYear;
                             aListBgtReset.add(sResetToday);
                         } else if (iTotalDays == 0) {
-                            String sResetIn1 = "Budget reset today";
+                            String sResetIn1 = "Budget reset today" +
+                                    " on: " +
+                                    sBgtResetDay +"/" + sBgtResetMonth + "/" + sBgtResetYear;
                             aListBgtReset.add(sResetIn1);
                         } else {
                             // fault in calc

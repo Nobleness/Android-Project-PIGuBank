@@ -83,12 +83,18 @@ public class BudgetFragmentListView extends ListFragment {
             String strBgtSpent = bgt.getBudgetAmountSpent();
             aListBgtSpent.add(strBgtSpent);
             String strBgtFregMonthDateBeforeAfter = bgt.getBudgetFreqMonthDateBeforeAfter();
-            //aListBgtFreqMonthDateBeforeAfter.add(strBgtFregMonthDateBeforeAfter);
 
             // read budget info to calc freq
             String freqType = bgt.getBudgetFreqType();
             Calendar c = Calendar.getInstance();
             c.getTime();
+
+            int iCurDateOfMonth = c.get(Calendar.DAY_OF_MONTH);
+            int iMaxDaysOfYear = c.getActualMaximum(Calendar.DAY_OF_YEAR);
+            int iCurDayOfYear = c.get(Calendar.DAY_OF_YEAR);
+            int iCurMonth = c.get(Calendar.MONTH);
+            int iDaysCurMonth = c.getActualMaximum(Calendar.DAY_OF_MONTH);
+            int iCurWeekday = c.get(Calendar.DAY_OF_WEEK);
 
             int iBgtFreq = Integer.parseInt(bgt.getBudgetFreq());
 
@@ -135,10 +141,7 @@ public class BudgetFragmentListView extends ListFragment {
                 case 2:
                     String strBgtFreqMonthDate = bgt.getBudgetFreqMonthDate();
                     String strBgtFreqMonthWeek = bgt.getBudgetFreqMonthWeek();
-                    int iCurDateOfMonth = c.get(Calendar.DAY_OF_MONTH);
-                    int iCurMonth = c.get(Calendar.MONTH);
-                    int iDaysCurMonth = c.getActualMaximum(Calendar.DAY_OF_MONTH);
-                    int iCurWeekday = c.get(Calendar.DAY_OF_WEEK);
+
                     int iFreqDateOfMonth = Integer.parseInt(strBgtFreqMonthDate);
 
                     String sBgtResetDayFormat = "0";
@@ -253,24 +256,24 @@ public class BudgetFragmentListView extends ListFragment {
                                             cFreqMonth.get(Calendar.YEAR));
 
                             String sBgtResets = Integer.toString(iBgtResets);
-                                if (iBgtResets > 0) {
+                                if (iBgtResets > 1) {
                                     String sResetInX = "Budget resets in " + sBgtResets + " Days" +
                                             " on: " +
                                             sBgtResetDayFormat +"/" + sBgtResetMonthFormat + "/"
                                             + sBgtResetYearFormat;
                                     aListBgtReset.add(sResetInX);
                                 } else if (iBgtResets == 1) {
-                                    String sResetToday = "Budget resets tomorrow" +
-                                            " on: " +
-                                            sBgtResetDayFormat +"/" + sBgtResetMonthFormat + "/"
-                                            + sBgtResetYearFormat;
-                                    aListBgtReset.add(sResetToday);
-                                } else if (iBgtResets == 0) {
-                                    String sResetIn1 = "Budget reset today" +
+                                    String sResetIn1 = "Budget resets tomorrow" +
                                             " on: " +
                                             sBgtResetDayFormat +"/" + sBgtResetMonthFormat + "/"
                                             + sBgtResetYearFormat;
                                     aListBgtReset.add(sResetIn1);
+                                } else if (iBgtResets == 0) {
+                                    String sResetToday = "Budget reset today" +
+                                            " on: " +
+                                            sBgtResetDayFormat +"/" + sBgtResetMonthFormat + "/"
+                                            + sBgtResetYearFormat;
+                                    aListBgtReset.add(sResetToday);
                                 }
                         } catch (Exception e) {
                             Log.e(PIGuActivity.APP_LOG, "Exception processing Month reset logic: "
@@ -288,11 +291,7 @@ public class BudgetFragmentListView extends ListFragment {
                         int iSumSinceWDMatch = 0;
                         boolean bWDMatch = false;
                         boolean bMMaxMatch = false;
-                        /*
-                        String sBgtResetDayFormat = "0";
-                        String sBgtResetMonthFormat = "0";
-                        String sBgtResetYearFormat = "0";
-                        */
+
                         int iLoopFreq = 0;
                         int iLoopWeek = 0;
                         Calendar calDayOfMonth = Calendar.getInstance();
@@ -531,6 +530,51 @@ public class BudgetFragmentListView extends ListFragment {
                         // calculate when budget resets by year
                         //
                         //
+                        int iSumYear = 0;
+
+                        Calendar calDateOfYear = Calendar.getInstance();
+                        int iBgtYearMonthDate = Integer.parseInt(bgt.getBudgetFreqYearMonthDate());
+                        int iBgtYearMonth = Integer.parseInt(bgt.getBudgetFreqYearMonth()) - 1;
+                        calDateOfYear.set(Calendar.MONTH, iBgtYearMonth);
+                        calDateOfYear.set(Calendar.DAY_OF_MONTH, iBgtYearMonthDate);
+
+                        if (iCurMonth > iBgtYearMonth ) {
+                            calDateOfYear.add(Calendar.YEAR, iBgtFreq);
+                        } else {
+                            if (iBgtFreq == 1) {
+                                 // do nothing
+                            } else {
+                                calDateOfYear.add(Calendar.YEAR, (iBgtFreq - 1));
+                            }
+                        }
+
+                        iSumYear = iMaxDaysOfYear - iCurDayOfYear;
+                        if (iBgtFreq > 1) {
+                            for (int i = 0; i != iBgtFreq -1; i++) {
+                                c.add(Calendar.YEAR, 1);
+                                iSumYear = iSumYear +
+                                        (c.getActualMaximum(Calendar.DAY_OF_YEAR));
+                            }
+                        }
+                        int iBgtDaysOfYear  = calDateOfYear.get(Calendar.DAY_OF_YEAR);
+                        iSumYear = iSumYear + iBgtDaysOfYear;
+
+                        String sBgtResets = Integer.toString(iSumYear);
+                        if (iSumYear < 0) {
+                            Log.e(PIGuActivity.APP_LOG, "iSumYear less than zero: " + iSumYear);
+                        } else if (iSumYear == 0) {
+                            String sResetToday = "Budget reset today";
+                            aListBgtReset.add(sResetToday);
+                        } else if (iSumYear == 1) {
+                            String sResetIn1 = "Budget resets tomorrow";
+                            aListBgtReset.add(sResetIn1);
+                        } else {
+                            String sResetInX = "Budget resets in " + sBgtResets + " Days";
+                            aListBgtReset.add(sResetInX);
+                        }
+
+
+
                     } else {
                         String sFreqYearNotSet = "Budget frequency by year not set";
                         aListBgtReset.add(sFreqYearNotSet);

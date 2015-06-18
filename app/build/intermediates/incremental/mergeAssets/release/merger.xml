@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\assets"><file name="useraccounts.xml" path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\main\assets\useraccounts.xml"/></source></dataSet><dataSet config="release"><source path="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\src\release\assets"/></dataSet></merger>

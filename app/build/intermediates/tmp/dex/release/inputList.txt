@@ -1,0 +1,2 @@
+A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\build\intermediates\classes\release
+A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\build\intermediates\pre-dexed\release\support-v4-19.1.0-25cc58471b51cdf456c369727730f8f9316a3097.jar

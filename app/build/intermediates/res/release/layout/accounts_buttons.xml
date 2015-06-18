@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:focusable="false"
+	android:focusableInTouchMode="false"
+    >
+    <LinearLayout
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+	    android:paddingLeft="@dimen/thickMargin"
+		android:paddingRight="@dimen/thickMargin"
+		android:orientation="horizontal"
+		android:focusable="false"
+		android:focusableInTouchMode="false"
+        >
+	    <Button
+		    style="style/android:attr/ButtonStyle"
+		    android:id="@+id/AccountBNedit"
+		    android:text="@string/button_edit"
+		    android:layout_width="fill_parent"
+		    android:layout_height="match_parent"
+		    android:focusable="false"
+	        android:focusableInTouchMode="false"
+	  		/>
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/AccountTVmain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/accounts_activity_label_in_overview"
+        android:gravity="center"
+        />
+    <ImageView
+        	android:id="@+id/AccountIVmain"
+	        android:layout_width="match_parent"
+	        android:layout_height="@dimen/spacerHeight"
+	        android:background="@color/spacerColor"
+	        android:layout_marginLeft="@dimen/largeMargin"
+	        android:layout_marginRight="@dimen/largeMargin"
+	        />
+</LinearLayout>
+
+
+<!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/layout/accounts_buttons.xml -->

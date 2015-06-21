@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/drawer_options.xml -->
+    <!-- From: file:/A:/Development/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/drawer_options.xml -->
     <eat-comment/>
     <string-array name="drawer_options">
         <item name="budgets_drawer_item">Edit Budgets</item>
@@ -8,7 +8,7 @@
         <item name="record_drawer_item">Record</item>
         <item name="about_drawer_item">About</item>
     </string-array>
-    <!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/freqoptions.xml -->
+    <!-- From: file:/A:/Development/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/freqoptions.xml -->
     <eat-comment/>
     <string-array name="freqMonthDate">
 	    <item name="not_selected">Select an option</item>
@@ -88,7 +88,7 @@
     	<item name="freq_november">November</item>
     	<item name="freq_december">December</item>
 	</string-array>
-    <!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/A:/Development/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="backgrnd">#1C1C1C</color>
     <color name="buttonTextColor">#01A9DB</color>
@@ -99,7 +99,7 @@
     <color name="textOverBackgrnd">#01A9DB</color>
     <color name="textOverGradient">#F368C2</color>
     <color name="widgetTextColor">#F368C2</color>
-    <!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/A:/Development/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="accountHeight">2sp</dimen>
     <dimen name="largeMargin">10sp</dimen>
@@ -110,7 +110,7 @@
     <dimen name="thickMargin">20sp</dimen>
     <dimen name="titleTextSize">28sp</dimen>
     <dimen name="widgetTextSize">30sp</dimen>
-    <!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/A:/Development/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="about_menu_item">About</string>
     <string name="about_title_string">About This App</string>
@@ -174,7 +174,7 @@
     <string name="toast_no_accounts">Please create an account</string>
     <string name="widgetImageContent_Description">Widget Quick Balance Background Image</string>
     <string name="zero_bal">0.00</string>
-    <!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/A:/Development/Android%20Studo%20Projects/PIGuBank/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="ActivityTheme" parent="AppTheme">
         <item name="android:textSize">@dimen/textSize</item>

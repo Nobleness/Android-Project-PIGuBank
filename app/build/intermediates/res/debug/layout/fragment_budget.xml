@@ -12,4 +12,4 @@
         android:id="@+id/fragBgtVP"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
-    </LinearLayout><!-- From: file:/A:/Google%20Drive/Development%20(Sync)/Android%20Studo%20Projects/PIGuBank/app/src/main/res/layout/fragment_budget.xml -->
+    </LinearLayout><!-- From: file:/A:/Development/Android%20Studo%20Projects/PIGuBank/app/src/main/res/layout/fragment_budget.xml -->

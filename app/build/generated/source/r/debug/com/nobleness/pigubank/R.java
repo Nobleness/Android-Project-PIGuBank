@@ -9,37 +9,37 @@ package com.nobleness.pigubank;
 
 public final class R {
     public static final class array {
-        public static final int drawer_options=0x7f060000;
-        public static final int freqMonthDate=0x7f060001;
-        public static final int freqMonthDateBeforeAfter=0x7f060002;
-        public static final int freqMonthWeekDay=0x7f060003;
-        public static final int freqType=0x7f060004;
-        public static final int freqWeekDay=0x7f060005;
-        public static final int freqYearMonth=0x7f060006;
+        public static final int drawer_options=0x7f070000;
+        public static final int freqMonthDate=0x7f070001;
+        public static final int freqMonthDateBeforeAfter=0x7f070002;
+        public static final int freqMonthWeekDay=0x7f070003;
+        public static final int freqType=0x7f070004;
+        public static final int freqWeekDay=0x7f070005;
+        public static final int freqYearMonth=0x7f070006;
     }
     public static final class attr {
     }
     public static final class color {
-        public static final int backgrnd=0x7f070000;
-        public static final int buttonTextColor=0x7f070001;
-        public static final int centreGradient=0x7f070002;
-        public static final int fillBoxBehindText=0x7f070003;
-        public static final int pink=0x7f070004;
-        public static final int spacerColor=0x7f070005;
-        public static final int textOverBackgrnd=0x7f070006;
-        public static final int textOverGradient=0x7f070007;
-        public static final int widgetTextColor=0x7f070008;
+        public static final int backgrnd=0x7f080000;
+        public static final int buttonTextColor=0x7f080001;
+        public static final int centreGradient=0x7f080002;
+        public static final int fillBoxBehindText=0x7f080003;
+        public static final int pink=0x7f080004;
+        public static final int spacerColor=0x7f080005;
+        public static final int textOverBackgrnd=0x7f080006;
+        public static final int textOverGradient=0x7f080007;
+        public static final int widgetTextColor=0x7f080008;
     }
     public static final class dimen {
-        public static final int accountHeight=0x7f080000;
-        public static final int largeMargin=0x7f080001;
-        public static final int margin=0x7f080002;
-        public static final int spacerHeight=0x7f080003;
-        public static final int tableTextSize=0x7f080004;
-        public static final int textSize=0x7f080005;
-        public static final int thickMargin=0x7f080006;
-        public static final int titleTextSize=0x7f080007;
-        public static final int widgetTextSize=0x7f080008;
+        public static final int accountHeight=0x7f090000;
+        public static final int largeMargin=0x7f090001;
+        public static final int margin=0x7f090002;
+        public static final int spacerHeight=0x7f090003;
+        public static final int tableTextSize=0x7f090004;
+        public static final int textSize=0x7f090005;
+        public static final int thickMargin=0x7f090006;
+        public static final int titleTextSize=0x7f090007;
+        public static final int widgetTextSize=0x7f090008;
     }
     public static final class drawable {
         public static final int gradient=0x7f020000;
@@ -160,85 +160,85 @@ public final class R {
         public static final int about=0x7f050000;
     }
     public static final class string {
-        public static final int about_menu_item=0x7f090000;
-        public static final int about_title_string=0x7f090001;
-        public static final int accounts_activity_edit_accounts_title_string=0x7f090002;
-        public static final int accounts_activity_label_in_overview=0x7f090003;
-        public static final int accounts_activity_title_string=0x7f090004;
-        public static final int accounts_menu_item=0x7f090005;
-        public static final int app_currency_format=0x7f090006;
-        public static final int app_name_string=0x7f090007;
-        public static final int budgets_activity_title_string=0x7f090008;
-        public static final int budgets_menu_item=0x7f090009;
-        public static final int button_Add_Subtract=0x7f09000a;
-        public static final int button_add_account=0x7f09000b;
-        public static final int button_add_budget=0x7f09000c;
-        public static final int button_config_account=0x7f09000d;
-        public static final int button_edit=0x7f09000e;
-        public static final int dialog_acc_add_avail_spend_tv=0x7f09000f;
-        public static final int dialog_acc_add_check_credit=0x7f090010;
-        public static final int dialog_acc_add_credit_limit_tv=0x7f090011;
-        public static final int dialog_acc_add_name_tv=0x7f090012;
-        public static final int dialog_acc_add_title=0x7f090013;
-        public static final int dialog_acc_cancel=0x7f090014;
-        public static final int dialog_acc_delete=0x7f090015;
-        public static final int dialog_acc_edit_title=0x7f090016;
-        public static final int dialog_acc_labal_main_account=0x7f090017;
-        public static final int dialog_acc_save=0x7f090018;
-        public static final int dialog_bgt_add_title=0x7f090019;
-        public static final int dialog_bgt_amount_spent=0x7f09001a;
-        public static final int dialog_bgt_cancel=0x7f09001b;
-        public static final int dialog_bgt_delete=0x7f09001c;
-        public static final int dialog_bgt_edit_title=0x7f09001d;
-        public static final int dialog_bgt_freq=0x7f09001e;
-        public static final int dialog_bgt_freq_button_date=0x7f09001f;
-        public static final int dialog_bgt_freq_button_day=0x7f090020;
-        public static final int dialog_bgt_freq_buttons=0x7f090021;
-        public static final int dialog_bgt_freq_date_of_month=0x7f090022;
-        public static final int dialog_bgt_freq_every=0x7f090023;
-        public static final int dialog_bgt_freq_off=0x7f090024;
-        public static final int dialog_bgt_freq_on=0x7f090025;
-        public static final int dialog_bgt_freq_on_year_date=0x7f090026;
-        public static final int dialog_bgt_limit=0x7f090027;
-        public static final int dialog_bgt_name=0x7f090028;
-        public static final int dialog_bgt_save=0x7f090029;
-        public static final int dialog_wgt_button_add=0x7f09002a;
-        public static final int dialog_wgt_button_cancel=0x7f09002b;
-        public static final int dialog_wgt_button_open=0x7f09002c;
-        public static final int dialog_wgt_button_subtract=0x7f09002d;
-        public static final int dialog_wgt_title=0x7f09002e;
-        public static final int history_menu_item=0x7f09002f;
-        public static final int home_budgets_title_string=0x7f090030;
-        public static final int overview_title_string=0x7f090031;
-        public static final int save_calc=0x7f090032;
-        public static final int tableHeader_acc=0x7f090033;
-        public static final int tableHeader_act=0x7f090034;
-        public static final int tableHeader_date=0x7f090035;
-        public static final int tableHeader_time=0x7f090036;
-        public static final int table_header_account=0x7f090037;
-        public static final int table_header_activity=0x7f090038;
-        public static final int table_header_date=0x7f090039;
-        public static final int table_header_time=0x7f09003a;
-        public static final int toast_no_accounts=0x7f09003b;
-        public static final int widgetImageContent_Description=0x7f09003c;
-        public static final int zero_bal=0x7f09003d;
+        public static final int about_menu_item=0x7f0a0000;
+        public static final int about_title_string=0x7f0a0001;
+        public static final int accounts_activity_edit_accounts_title_string=0x7f0a0002;
+        public static final int accounts_activity_label_in_overview=0x7f0a0003;
+        public static final int accounts_activity_title_string=0x7f0a0004;
+        public static final int accounts_menu_item=0x7f0a0005;
+        public static final int app_currency_format=0x7f0a0006;
+        public static final int app_name_string=0x7f0a0007;
+        public static final int budgets_activity_title_string=0x7f0a0008;
+        public static final int budgets_menu_item=0x7f0a0009;
+        public static final int button_Add_Subtract=0x7f0a000a;
+        public static final int button_add_account=0x7f0a000b;
+        public static final int button_add_budget=0x7f0a000c;
+        public static final int button_config_account=0x7f0a000d;
+        public static final int button_edit=0x7f0a000e;
+        public static final int dialog_acc_add_avail_spend_tv=0x7f0a000f;
+        public static final int dialog_acc_add_check_credit=0x7f0a0010;
+        public static final int dialog_acc_add_credit_limit_tv=0x7f0a0011;
+        public static final int dialog_acc_add_name_tv=0x7f0a0012;
+        public static final int dialog_acc_add_title=0x7f0a0013;
+        public static final int dialog_acc_cancel=0x7f0a0014;
+        public static final int dialog_acc_delete=0x7f0a0015;
+        public static final int dialog_acc_edit_title=0x7f0a0016;
+        public static final int dialog_acc_labal_main_account=0x7f0a0017;
+        public static final int dialog_acc_save=0x7f0a0018;
+        public static final int dialog_bgt_add_title=0x7f0a0019;
+        public static final int dialog_bgt_amount_spent=0x7f0a001a;
+        public static final int dialog_bgt_cancel=0x7f0a001b;
+        public static final int dialog_bgt_delete=0x7f0a001c;
+        public static final int dialog_bgt_edit_title=0x7f0a001d;
+        public static final int dialog_bgt_freq=0x7f0a001e;
+        public static final int dialog_bgt_freq_button_date=0x7f0a001f;
+        public static final int dialog_bgt_freq_button_day=0x7f0a0020;
+        public static final int dialog_bgt_freq_buttons=0x7f0a0021;
+        public static final int dialog_bgt_freq_date_of_month=0x7f0a0022;
+        public static final int dialog_bgt_freq_every=0x7f0a0023;
+        public static final int dialog_bgt_freq_off=0x7f0a0024;
+        public static final int dialog_bgt_freq_on=0x7f0a0025;
+        public static final int dialog_bgt_freq_on_year_date=0x7f0a0026;
+        public static final int dialog_bgt_limit=0x7f0a0027;
+        public static final int dialog_bgt_name=0x7f0a0028;
+        public static final int dialog_bgt_save=0x7f0a0029;
+        public static final int dialog_wgt_button_add=0x7f0a002a;
+        public static final int dialog_wgt_button_cancel=0x7f0a002b;
+        public static final int dialog_wgt_button_open=0x7f0a002c;
+        public static final int dialog_wgt_button_subtract=0x7f0a002d;
+        public static final int dialog_wgt_title=0x7f0a002e;
+        public static final int history_menu_item=0x7f0a002f;
+        public static final int home_budgets_title_string=0x7f0a0030;
+        public static final int overview_title_string=0x7f0a0031;
+        public static final int save_calc=0x7f0a0032;
+        public static final int tableHeader_acc=0x7f0a0033;
+        public static final int tableHeader_act=0x7f0a0034;
+        public static final int tableHeader_date=0x7f0a0035;
+        public static final int tableHeader_time=0x7f0a0036;
+        public static final int table_header_account=0x7f0a0037;
+        public static final int table_header_activity=0x7f0a0038;
+        public static final int table_header_date=0x7f0a0039;
+        public static final int table_header_time=0x7f0a003a;
+        public static final int toast_no_accounts=0x7f0a003b;
+        public static final int widgetImageContent_Description=0x7f0a003c;
+        public static final int zero_bal=0x7f0a003d;
     }
     public static final class style {
-        public static final int ActivityTheme=0x7f0a0000;
-        /** 
+        public static final int ActivityTheme=0x7f060001;
+        /**  API 11 theme customizations can go here. 
+ API 14 theme customizations can go here. 
+
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
             backward-compatibility can go here.
         
- API 11 theme customizations can go here. 
- API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f0a0001;
-        public static final int AppTheme=0x7f0a0002;
-        public static final int CustomAlertDialog=0x7f0a0003;
-        public static final int GradientFontStyle=0x7f0a0004;
-        public static final int SmallTitleFontStyle=0x7f0a0005;
-        public static final int TitleFontStyle=0x7f0a0006;
+        public static final int AppBaseTheme=0x7f060000;
+        public static final int AppTheme=0x7f060002;
+        public static final int CustomAlertDialog=0x7f060003;
+        public static final int GradientFontStyle=0x7f060004;
+        public static final int SmallTitleFontStyle=0x7f060005;
+        public static final int TitleFontStyle=0x7f060006;
     }
     public static final class xml {
         public static final int mockactions=0x7f040000;

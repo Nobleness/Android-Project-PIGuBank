@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="A:\Development Applications\Development Kits\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jar="/Users/Noble/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
         jumboMode="false"
         revision="21.1.2"
         sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
-        <dex dex="A:\Google Drive\Development (Sync)\Android Studo Projects\PIGuBank\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-25cc58471b51cdf456c369727730f8f9316a3097.jar" />
+        <dex dex="/Users/Noble/Google Drive/Development Files (Sync)/Android Studo Projects/Android-Project-PIGuBank/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-42b7397ee51b5495fe161d81a7b5015dcdf78ef5.jar" />
     </item>
 
 </items>
